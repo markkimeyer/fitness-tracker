@@ -2,6 +2,7 @@ const API = {
   async getLastWorkout() {
     let res;
     try {
+      //defaults to a get , because it has no method
       res = await fetch("/api/workouts");
     } catch (err) {
       console.log(err)
@@ -35,6 +36,7 @@ const API = {
     return json;
   },
 
+   //defaults to a get , because it has no method
   async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();
