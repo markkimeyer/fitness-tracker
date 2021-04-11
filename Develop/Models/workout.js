@@ -41,7 +41,11 @@ const WorkoutSchema = new Schema({
       type: Number,
       trim: true,
     },
-  }]
+  }],
+  totalDuration : {
+    type: Number,
+    default: 0,
+  }
 })
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
