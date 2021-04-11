@@ -3,6 +3,7 @@ const API = {
     let res;
     try {
       //defaults to a get , because it has no method
+     // router.get("/api/workouts",
       res = await fetch("/api/workouts");
     } catch (err) {
       console.log(err)
@@ -11,6 +12,7 @@ const API = {
 
     return json[json.length - 1];
   },
+  //created api route  router.post("/api/workouts/:id
   async addExercise(data) {
     const id = location.search.split("=")[1];
 
@@ -24,6 +26,7 @@ const API = {
 
     return json;
   },
+  //created api route, router.post("/api/workouts"
   async createWorkout(data = {}) {
     const res = await fetch("/api/workouts", {
       method: "POST",
@@ -36,7 +39,7 @@ const API = {
     return json;
   },
 
-   //defaults to a get , because it has no method
+   //defaults to a get , because it has no method, router.get("/api/workouts/range
   async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();
