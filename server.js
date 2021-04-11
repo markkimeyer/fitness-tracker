@@ -9,7 +9,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("Develop/public"));
 
 app.use(require("./Develop/routes/htmlRoutes"));
 
