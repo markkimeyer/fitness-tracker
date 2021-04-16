@@ -15,7 +15,7 @@ app.use(require("./Develop/routes/htmlRoutes"));
 
 app.use(require("./Develop/routes/apiRoutes"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutstracker", { 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", { 
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
