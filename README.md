@@ -6,8 +6,9 @@
 # <div align ='center'> **Fitness Tracker** </div>
 
 --- 
-<div align ='center'><img src="Images/summary.png.jpg" alt="summary of app" width="500"></div>
---- 
+<div align ='center'><img src="Images/dash.jpeg" alt="dashboard" width="500"></div>
+
+---
 
 ## **Table Of Contents** 
 
@@ -35,6 +36,7 @@ This app allows users to view, create, and track daily workouts. Multiple exerci
  
 Fitness Tracker is live on Heroku.  <ol>
 <li>If you would like to download it locally, clone the repo and run `npm i`.  This will install all dependencies</li>
+<li>npm run seed will import the seed data.</li>
 <li>Initialize the app in the command line with `npm start` </li>
 <li>In the command line note which port the server is being run on and input `localhost:{givenPORT}` in the browser</li>
 </ol>
@@ -54,6 +56,10 @@ Fitness Tracker is live on Heroku.  <ol>
 <li>From the dashboard, stats are given. </li>
 <li>Take advantage of this app to meet your fitness goals!</li>
 </ol>
+
+--- 
+
+<div align ='center'><img src="Images/summary.png.jpg" alt="summary of app" width="500"></div>
 
 ---
 

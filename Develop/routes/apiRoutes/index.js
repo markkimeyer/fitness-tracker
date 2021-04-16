@@ -50,10 +50,17 @@ router.put("/api/workouts/:id", (req, res) => {
 
 //get range
 router.get("/api/workouts/range", (req, res) => {
-
-    Workout.find({})
-        .then(workout => {
-            res.json(workout);
+    Workout.aggregate([
+        {
+          $addFields: {
+            totalDuration: { $sum: "$exercises.duration" },
+          },
+        },
+      ])
+        .sort({ day: 1})
+        .limit(7)
+        .then((Workout) => {
+          res.json(Workout);
         })
         .catch(err => {
             res.json(err);
